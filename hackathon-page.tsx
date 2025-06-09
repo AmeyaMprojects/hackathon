@@ -300,11 +300,11 @@ export default function HackathonPage() {
           <div className="mt-20">
   <h3 className="text-2xl font-bold text-white mb-6 text-center">Special Thanks to Our Sponsors</h3>
   <div className="flex flex-wrap justify-center items-center gap-8">
-    <a href="https://bcic.org.in/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+    <a href="https://www.bcic.in/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
       <img src="/pic/bcic-removebg-preview.png" alt="BCIC" className="h-28 mb-2" />
       {/* <span className="text-gray-300 text-sm">BCIC</span> */}
     </a>
-    <a href="https://www.manipal.edu/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+    <a href="https://www.manipal.edu/mu.html" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
       <img src="/pic/manipal-removebg-preview.png" alt="Manipal" className="h-40 mb-2" />
       {/* <span className="text-gray-300 text-sm">Manipal</span> */}
     </a>
