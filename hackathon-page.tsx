@@ -53,10 +53,10 @@ export default function HackathonPage() {
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-purple-500/20 text-purple-300 border-purple-500/30">25th July - 19th August , 2025</Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Build the
+              Hack
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                {" "}
-                Future
+                {""}
+                otsav 2025
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
