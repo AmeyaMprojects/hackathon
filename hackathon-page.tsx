@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, Trophy, Users, MapPin, Zap, Code, Rocket, Bot , EthernetPort } from "lucide-react"
+import { Clock, Trophy, Users, MapPin, Zap, Code, Rocket, Bot, EthernetPort } from "lucide-react"
 import Link from "next/link"
 
 export default function HackathonPage() {
@@ -19,7 +19,7 @@ export default function HackathonPage() {
               </div>
               <span className="text-xl font-bold text-white">Hackotsav 2025</span>
             </div>
-           
+
             <nav className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-300 hover:text-white transition-colors">
                 About
@@ -105,47 +105,47 @@ export default function HackathonPage() {
       </section>
 
       {/* About Section */}
-<section id="about" className="py-20 px-4">
-  <div className="container mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-white mb-4">What is Hackotsav?</h2>
-      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-        From Ideas to Internships, Hack your way In!
-        <br />
+      <section id="about" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">What is Hackotsav?</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              From Ideas to Internships, Hack your way In!
+              <br />
 
-Join the brightest minds across Karnataka for an epic ‘Hackotsav’ focused on
-      </p>
-    </div>
-    <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-      <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
-            <Bot className="w-6 h-6 text-white" />
+              Join the brightest minds across Karnataka for an epic ‘Hackotsav’ focused on
+            </p>
           </div>
-          <CardTitle className="text-white">Track 1: ARTIFICIAL INTELLIGENCE</CardTitle>
-        </CardHeader>
-        {/* <CardContent>
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                  <Bot className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white">Track 1: ARTIFICIAL INTELLIGENCE</CardTitle>
+              </CardHeader>
+              {/* <CardContent>
           <CardDescription className="text-gray-300">
             Build innovative solutions using artificial intelligence, machine learning, and data science to solve real-world challenges.
           </CardDescription>
         </CardContent> */}
-      </Card>
-      <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
-            <EthernetPort className="w-6 h-6 text-white" />
-          </div>
-          <CardTitle className="text-white">Track 2: CYBER SECURITY</CardTitle>
-        </CardHeader>
-        {/* <CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
+                  <EthernetPort className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white">Track 2: CYBER SECURITY</CardTitle>
+              </CardHeader>
+              {/* <CardContent>
           <CardDescription className="text-gray-300">
             Create impactful web or mobile applications that enhance user experience, accessibility, or community engagement.
           </CardDescription>
         </CardContent> */}
-      </Card>
-    </div>
-  </div>
-</section>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Schedule Section */}
       <section id="schedule" className="py-20 px-4 bg-white/5">
@@ -237,88 +237,86 @@ Join the brightest minds across Karnataka for an epic ‘Hackotsav’ focused on
         </div>
       </section>
 
-<section id="prizes" className="py-20 px-4">
-  <div className="container mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-white mb-4">Amazing Prizes</h2>
-      <p className="text-xl text-gray-300">₹50,000 in total prizes and opportunities</p>
-    </div>
-    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <Card className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-yellow-500/30 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Trophy className="w-8 h-8 text-white" />
+      <section id="prizes" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Amazing Prizes</h2>
+            <p className="text-xl text-gray-300">₹50,000 in total prizes and opportunities</p>
           </div>
-          <CardTitle className="text-2xl text-white">1st Place</CardTitle>
-        </CardHeader>
-        <CardContent className="text-center">
-          <div className="text-3xl font-bold text-yellow-400 mb-2">₹20,000</div>
-          <p className="text-gray-300">Cash prize + Mentorship + Investor meetings</p>
-        </CardContent>
-      </Card>
-      <Card className="bg-gradient-to-br from-gray-400/20 to-gray-600/20 border-gray-400/30 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Trophy className="w-8 h-8 text-white" />
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-yellow-500/30 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl text-white">1st Place</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold text-yellow-400 mb-2">₹20,000</div>
+                <p className="text-gray-300">Cash prize + Mentorship + Investor meetings</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-gradient-to-br from-gray-400/20 to-gray-600/20 border-gray-400/30 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl text-white">2nd Place</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold text-gray-400 mb-2">₹15,000</div>
+                <p className="text-gray-300">Cash prize + Tech package + Mentorship</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-gradient-to-br from-amber-600/20 to-amber-800/20 border-amber-600/30 backdrop-blur-sm">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-600 to-amber-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-2xl text-white">3rd Place</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold text-amber-600 mb-2">₹10,000</div>
+                <p className="text-gray-300">Cash prize + Tech package</p>
+              </CardContent>
+            </Card>
           </div>
-          <CardTitle className="text-2xl text-white">2nd Place</CardTitle>
-        </CardHeader>
-        <CardContent className="text-center">
-          <div className="text-3xl font-bold text-gray-400 mb-2">₹15,000</div>
-          <p className="text-gray-300">Cash prize + Tech package + Mentorship</p>
-        </CardContent>
-      </Card>
-      <Card className="bg-gradient-to-br from-amber-600/20 to-amber-800/20 border-amber-600/30 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-r from-amber-600 to-amber-800 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Trophy className="w-8 h-8 text-white" />
+          <div className="text-center mt-12">
+            <p className="text-gray-300 mb-6">
+              Plus special category prizes for Best AI Implementation, Most Creative Solution, and People's Choice!
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+            >
+              <Link href={googleFormUrl} target="_blank" rel="noopener noreferrer">
+                <Zap className="w-5 h-5 mr-2" />
+                Register to Compete
+              </Link>
+            </Button>
           </div>
-          <CardTitle className="text-2xl text-white">3rd Place</CardTitle>
-        </CardHeader>
-        <CardContent className="text-center">
-          <div className="text-3xl font-bold text-amber-600 mb-2">₹10,000</div>
-          <p className="text-gray-300">Cash prize + Tech package</p>
-        </CardContent>
-      </Card>
-    </div>
-    <div className="text-center mt-12">
-      <p className="text-gray-300 mb-6">
-        Plus special category prizes for Best AI Implementation, Most Creative Solution, and People's Choice!
-      </p>
-      <Button
-        asChild
-        size="lg"
-        className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-      >
-        <Link href={googleFormUrl} target="_blank" rel="noopener noreferrer">
-          <Zap className="w-5 h-5 mr-2" />
-          Register to Compete
-        </Link>
-      </Button>
-    </div>
-    {/* Sponsors Section */}
-    <div className="mt-20">
-      <h3 className="text-2xl font-bold text-white mb-6 text-center">Special Thanks to Our Sponsors</h3>
-      <div className="flex flex-wrap justify-center items-center gap-8">
-        {/* Example sponsor logos, replace with real sponsor info */}
-        <a  target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-          <img src="sponsers/sponsor1-logo.png" alt="Sponsor 1" className="h-16 mb-2" />
-          <span className="text-gray-300 text-sm">Sponsor 1</span>
-        </a>
-        <a  target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-          <img src="sponsors/sponsor2-logo.png" alt="Sponsor 2" className="h-16 mb-2" />
-          <span className="text-gray-300 text-sm">Sponsor 2</span>
-        </a>
-        <a  target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-          <img src="/sponsors/sponsor3-logo.png" alt="Sponsor 3" className="h-16 mb-2" />
-          <span className="text-gray-300 text-sm">Sponsor 3</span>
-        </a>
-        {/* Add more sponsors as needed */}
-      </div>
-      <p className="text-gray-400 text-center mt-4">We are grateful for their generous support!</p>
-    </div>
+          {/* Sponsors Section */}
+          <div className="mt-20">
+  <h3 className="text-2xl font-bold text-white mb-6 text-center">Special Thanks to Our Sponsors</h3>
+  <div className="flex flex-wrap justify-center items-center gap-8">
+    <a href="https://bcic.org.in/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+      <img src="/pic/bcic-removebg-preview.png" alt="BCIC" className="h-28 mb-2" />
+      {/* <span className="text-gray-300 text-sm">BCIC</span> */}
+    </a>
+    <a href="https://www.manipal.edu/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+      <img src="/pic/manipal-removebg-preview.png" alt="Manipal" className="h-40 mb-2" />
+      {/* <span className="text-gray-300 text-sm">Manipal</span> */}
+    </a>
+    <a href="https://www.tcs.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+      <img src="/pic/tcs-removebg-preview.png" alt="TCS" className="h-28 mb-2" />
+      {/* <span className="text-gray-300 text-sm">TCS</span> */}
+    </a>
   </div>
-</section>
+  <p className="text-gray-400 text-center mt-4">We are grateful for their generous support!</p>
+</div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section id="faq" className="py-20 px-4 bg-white/5">
@@ -392,7 +390,7 @@ Join the brightest minds across Karnataka for an epic ‘Hackotsav’ focused on
               <Link href="#" className="hover:text-white transition-colors">
                 Contact
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
+              <Link href="#prizes" className="hover:text-white transition-colors">
                 Sponsors
               </Link>
               <Link href="#" className="hover:text-white transition-colors">
