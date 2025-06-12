@@ -399,16 +399,14 @@ export default function HackathonPage() {
               </div>
               <span className="text-xl font-bold text-white">Hackotsav 2025</span>
             </div>
-            <div className="flex space-x-6 text-gray-300">
+            <div className="flex space-x-6 text-gray-300 mr-7">
               <Link href="#" className="hover:text-white transition-colors">
                 Contact
               </Link>
               <Link href="#prizes" className="hover:text-white transition-colors">
                 Sponsors
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
-                Code of Conduct
-              </Link>
+              
             </div>
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-400">
