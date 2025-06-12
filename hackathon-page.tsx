@@ -5,13 +5,13 @@ import { Clock, Trophy, Users, MapPin, Zap, Code, Rocket, Bot, EthernetPort } fr
 import Link from "next/link"
 
 export default function HackathonPage() {
-  const googleFormUrl = "https://forms.google.com/your-form-link" // Replace with actual Google Form URL
+  const googleFormUrl = "https://forms.gle/HpaYtAVtR4LwFdNCA" // Replace with actual Google Form URL
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Header */}
       <header className="border-b border-white/10 backdrop-blur-sm bg-white/5">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function HackathonPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-5 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-6 bg-purple-500/20 text-purple-300 border-purple-500/30">25th July - 19th August , 2025</Badge>
@@ -59,10 +59,10 @@ export default function HackathonPage() {
                 otsav 2025
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+            {/* <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
               Join 500+ developers, designers, and innovators for 48 hours of coding, creativity, and collaboration.
               Turn your wildest ideas into reality.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button
                 asChild
@@ -100,6 +100,30 @@ export default function HackathonPage() {
                 <span>Banglore, India</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>{/* Sponsors Section */}
+      
+
+      <section id="prizes" className=" px-4">
+        <div className="container mx-auto">
+          <div className="mt-20">
+            <h3 className="text-4xl font-bold text-white mb-6 text-center">Special Thanks to Our Sponsors</h3>
+            <div className="flex flex-wrap justify-center items-center gap-8">
+              <a href="https://www.bcic.in/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+                <img src="/pic/bcic-removebg-preview.png" alt="BCIC" className="h-40 mb-2" />
+                {/* <span className="text-gray-300 text-sm">BCIC</span> */}
+              </a>
+              <a href="https://www.manipal.edu/mu.html" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+                <img src="/pic/manipal-removebg-preview.png" alt="Manipal" className="h-50 mb-2" />
+                {/* <span className="text-gray-300 text-sm">Manipal</span> */}
+              </a>
+              <a href="https://www.tcs.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+                <img src="/pic/tcs-removebg-preview.png" alt="TCS" className="h-40 mb-2" />
+                {/* <span className="text-gray-300 text-sm">TCS</span> */}
+              </a>
+            </div>
+            {/* <p className="text-gray-400 text-center mt-4">We are grateful for their generous support!</p> */}
           </div>
         </div>
       </section>
@@ -148,207 +172,196 @@ export default function HackathonPage() {
       </section>
 
       {/* Schedule Section */}
-      <section id="schedule" className="py-20 px-4 bg-white/5">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Event Schedule</h2>
-            {/* <p className="text-xl text-gray-300">48 hours of non-stop innovation</p> */}
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <Badge variant="outline" className="border-purple-500/30 text-purple-300">
-                    round 1
-                  </Badge>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white mb-2">Friday, March 15</h3>
-                  <div className="space-y-2 text-gray-300">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>6:00 PM - Registration & Welcome</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>7:00 PM - Opening Ceremony</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>8:00 PM - Team Formation & Hacking Begins</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <Badge variant="outline" className="border-blue-500/30 text-blue-300">
-                    round 2
-                  </Badge>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white mb-2">Saturday, March 16</h3>
-                  <div className="space-y-2 text-gray-300">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>9:00 AM - Breakfast & Workshops</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>12:00 PM - Lunch & Mentorship</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>6:00 PM - Dinner & Networking</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <Badge variant="outline" className="border-green-500/30 text-green-300">
-                    round 3
-                  </Badge>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-white mb-2">Sunday, March 17</h3>
-                  <div className="space-y-2 text-gray-300">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>10:00 AM - Final Sprint</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>2:00 PM - Project Submissions</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>3:00 PM - Presentations & Judging</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span>5:00 PM - Awards & Closing</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="prizes" className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Amazing Prizes</h2>
-            <p className="text-xl text-gray-300">₹50,000 in total prizes and opportunities</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-yellow-500/30 backdrop-blur-sm">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Trophy className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl text-white">1st Place</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="text-3xl font-bold text-yellow-400 mb-2">₹20,000</div>
-                <p className="text-gray-300">Cash prize + Mentorship + Investor meetings</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-to-br from-gray-400/20 to-gray-600/20 border-gray-400/30 backdrop-blur-sm">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Trophy className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl text-white">2nd Place</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="text-3xl font-bold text-gray-400 mb-2">₹15,000</div>
-                <p className="text-gray-300">Cash prize + Tech package + Mentorship</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-to-br from-amber-600/20 to-amber-800/20 border-amber-600/30 backdrop-blur-sm">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-600 to-amber-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Trophy className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl text-white">3rd Place</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">₹10,000</div>
-                <p className="text-gray-300">Cash prize + Tech package</p>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-gray-300 mb-6">
-              Plus special category prizes for Best AI Implementation, Most Creative Solution, and People's Choice!
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-            >
-              <Link href={googleFormUrl} target="_blank" rel="noopener noreferrer">
-                <Zap className="w-5 h-5 mr-2" />
-                Register to Compete
-              </Link>
-            </Button>
-          </div>
-          {/* Sponsors Section */}
-          <div className="mt-20">
-  <h3 className="text-2xl font-bold text-white mb-6 text-center">Special Thanks to Our Sponsors</h3>
-  <div className="flex flex-wrap justify-center items-center gap-8">
-    <a href="https://www.bcic.in/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-      <img src="/pic/bcic-removebg-preview.png" alt="BCIC" className="h-28 mb-2" />
-      {/* <span className="text-gray-300 text-sm">BCIC</span> */}
-    </a>
-    <a href="https://www.manipal.edu/mu.html" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-      <img src="/pic/manipal-removebg-preview.png" alt="Manipal" className="h-40 mb-2" />
-      {/* <span className="text-gray-300 text-sm">Manipal</span> */}
-    </a>
-    <a href="https://www.tcs.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-      <img src="/pic/tcs-removebg-preview.png" alt="TCS" className="h-28 mb-2" />
-      {/* <span className="text-gray-300 text-sm">TCS</span> */}
-    </a>
+<section
+  id="schedule"
+  className="relative py-24 px-4 bg-gradient-to-br from-purple-900/60 via-slate-900/80 to-purple-900/60 flex items-center justify-center min-h-screen overflow-hidden"
+>
+  {/* Decorative background elements */}
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute top-10 left-1/4 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
   </div>
-  <p className="text-gray-400 text-center mt-4">We are grateful for their generous support!</p>
-</div>
+  <div className="container mx-auto text-center relative z-10">
+    <div className="mb-20">
+      <h2 className="text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">Event Schedule</h2>
+      <p className="text-2xl text-purple-200 mb-2">Mark your calendars for every milestone!</p>
+    </div>
+    <div className="max-w-4xl mx-auto space-y-16">
+      {/* Registration Closes */}
+      <div className="flex items-center space-x-8 bg-white/5 border border-purple-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+        <div className="flex-shrink-0 w-48 text-right">
+          <Badge variant="outline" className="border-purple-500/60 text-purple-300 text-lg px-6 py-3 font-semibold shadow-md">
+            18th July
+          </Badge>
         </div>
-      </section>
+        <div className="flex-1 text-left">
+          <h3 className="text-3xl font-bold text-white mb-2">Registration Closes</h3>
+          <p className="text-lg text-purple-200">Last day to register your team for Hackotsav 2025.</p>
+        </div>
+      </div>
+      {/* Curtain Raiser */}
+      <div className="flex items-center space-x-8 bg-white/5 border border-blue-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+        <div className="flex-shrink-0 w-48 text-right">
+          <Badge variant="outline" className="border-blue-500/60 text-blue-200 text-lg px-6 py-3 font-semibold shadow-md">
+            25th July
+          </Badge>
+        </div>
+        <div className="flex-1 text-left">
+          <h3 className="text-3xl font-bold text-white mb-2">Curtain Raiser</h3>
+          <p className="text-lg text-blue-200">Kick-off event with keynote speakers and challenge reveal.</p>
+        </div>
+      </div>
+      {/* Finale */}
+      <div className="flex items-center space-x-8 bg-white/5 border border-green-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+        <div className="flex-shrink-0 w-48 text-right">
+          <Badge variant="outline" className="border-green-500/60 text-green-200 text-lg px-6 py-3 font-semibold shadow-md">
+            19th August
+          </Badge>
+        </div>
+        <div className="flex-1 text-left">
+          <h3 className="text-3xl font-bold text-white mb-2">Finale</h3>
+          <p className="text-lg text-green-200">Final presentations, demos, and awards at MIT Bengaluru Campus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 px-4 bg-white/5">
+      <section id="faq" className="py-10 px-4 bg-white/5">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Hackotsav 2025 - FAQ</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-6">
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-white">Who can participate?</CardTitle>
+                <CardTitle className="text-white">1. What is Hackotsav?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300">
-                  Anyone! Students, professionals, designers, developers - all skill levels are welcome. You can
-                  participate solo or in teams of up to 2 people.
+                  Hackotsav is a Karnataka state-wide hackathon organized by Manipal Academy of Higher Education, BCIC, and TCS, bringing together bright minds from Karnataka to solve real-world problems in Artificial Intelligence and Cyber Security. It’s a platform to innovate, learn, and showcase your skills to industry experts.
                 </p>
               </CardContent>
             </Card>
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-white">What should I bring?</CardTitle>
+                <CardTitle className="text-white">2. Who can participate?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300">
-                  Bring your laptop, charger, and any hardware you want to hack with. We'll provide food, drinks, WiFi,
-                  and a great atmosphere!
+                  Students, from 3rd and 4th year of Engineering, MCA 2nd and 3rd year, BCA 2nd Year from Karnataka with an interest in AI, Cybersecurity, and technology innovation are welcome. Prior hackathon experience is not mandatory.
                 </p>
               </CardContent>
             </Card>
-
-
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">3. Do I need to know coding to participate?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  While coding knowledge is helpful, teams can include members with varied skill sets such as problem-solving, design thinking, business analysis, and domain expertise.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">4. How do I register?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  You can register by scanning the QR code provided on this page or event poster or through the official registration link shared by the organizing team. Registration closes on 18th July 2025.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">5. Is there any registration fee?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  No, participation in Hackotsav is completely free.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">6. What is the event timeline?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-gray-300 list-disc list-inside space-y-1">
+                  <li>Registration Closes: 18th July 2025</li>
+                  <li>Curtain Raiser: 25th July 2025</li>
+                  <li>Finale: 19th August 2025</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">7. Can I participate individually or do I need a team?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  Team registrations are allowed with two members in each team.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">8. What kind of problems will we solve?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  Real-world industry problems in Artificial Intelligence and Cyber Security, provided by partnering organizations. You will get mentorship and guidance throughout the event.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">9. What do winners and participants get?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-gray-300 list-disc list-inside space-y-1">
+                  <li>Opportunity to work on real-world problems</li>
+                  <li>Mentorship from industry experts</li>
+                  <li>Industry connections and exposure</li>
+                  <li>Top internships and job opportunities</li>
+                  <li>Industry-level recognition and certificates</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">10. Will there be mentorship during the event?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  Yes. Expert mentors from industry will guide teams throughout the hackathon process.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">11. Where will Hackotsav be held?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  Most of the events will be online. The final presentations and award ceremony will be held at the Manipal Institute of Technology, Bengaluru Campus.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-white">12. Who are the organizers and sponsors?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">
+                  Hackotsav is organized by Manipal Academy of Higher Education, in collaboration with BCIC and Tata Consultancy Services (TCS).
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
