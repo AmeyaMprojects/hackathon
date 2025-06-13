@@ -119,7 +119,7 @@ export default function HackathonPage() {
                 {/* <span className="text-gray-300 text-sm">Manipal</span> */}
               </a>
               <a href="https://www.tcs.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-                <img src="/pic/tcs-removebg-preview.png" alt="TCS" className="h-40 mb-2" />
+                <img src="/pic/tcs-removebg-preview.svg" alt="TCS" className="h-53 mb-2" />
                 {/* <span className="text-gray-300 text-sm">TCS</span> */}
               </a>
             </div>
