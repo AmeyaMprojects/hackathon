@@ -3,7 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Clock, Trophy, Users, MapPin, Zap, Code, Rocket, Bot, EthernetPort } from "lucide-react"
 import Link from "next/link"
-
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const mapSrc = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJswKqAtUZrjsRq3FM3l4HH7M&key=${apiKey}`;
 export default function HackathonPage() {
   const googleFormUrl = "https://forms.gle/HpaYtAVtR4LwFdNCA" // Replace with actual Google Form URL
 
@@ -171,12 +172,13 @@ export default function HackathonPage() {
           </div>
         </div>
       </section>
-<div className="my-12 flex flex-col items-center">
+      <div className="my-12 flex flex-col items-center">
   <h3 className="text-2xl font-bold text-white mb-4">Location</h3>
   <p className="text-gray-300 mb-4">Manipal Institute of Technology, Bengaluru Campus</p>
   <div className="w-full max-w-xl rounded-lg overflow-hidden shadow-lg border border-white/10">
     <iframe
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJswKqAtUZrjsRq3FM3l4HH7M&key=AIzaSyBubRR9n_FiPPnknhMZlxyHNm6s_7nzo2s"      width="100%"
+      src={mapSrc}
+      width="100%"
       height="350"
       style={{ border: 0 }}
       allowFullScreen={true}
