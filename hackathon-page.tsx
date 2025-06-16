@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, Trophy, Users, MapPin, Zap, Code, Rocket, Bot, EthernetPort } from "lucide-react"
 import Link from "next/link"
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-const mapSrc = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJswKqAtUZrjsRq3FM3l4HH7M&key=${apiKey}`;
+const mapSrc = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJswKqAtUZrjsRq3FM3l4HH7M&key=AIzaSyBubRR9n_FiPPnknhMZlxyHNm6s_7nzo2s
+`;
 
 
 export default function HackathonPage() {
