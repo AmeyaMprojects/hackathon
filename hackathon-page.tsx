@@ -97,13 +97,13 @@ export default function HackathonPage() {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-5 h-5" />
-                <span>Banglore, India</span>
+                <span>Manipal Banglore campus</span>
               </div>
             </div>
           </div>
         </div>
       </section>{/* Sponsors Section */}
-      
+
 
       <section id="prizes" className=" px-4">
         <div className="container mx-auto">
@@ -173,60 +173,60 @@ export default function HackathonPage() {
 
       {/* Schedule Section */}
 
-<section
-  id="schedule"
-  className="relative py-24 px-4 bg-gradient-to-br from-purple-900/60 via-slate-900/80 to-purple-900/60 flex items-center justify-center min-h-screen overflow-hidden"
->
-  {/* Decorative background elements */}
-  <div className="absolute inset-0 pointer-events-none">
-    <div className="absolute top-10 left-1/4 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl"></div>
-    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
-  </div>
-  <div className="container mx-auto text-center relative z-10">
-    <div className="mb-20">
-      <h2 className="text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">Event Schedule</h2>
-      <p className="text-2xl text-purple-200 mb-2">Mark your calendars for every milestone!</p>
-    </div>
-    <div className="max-w-4xl mx-auto space-y-16">
-      {/* Registration Closes */}
-      <div className="flex items-center space-x-8 bg-white/5 border border-purple-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
-        <div className="flex-shrink-0 w-48 text-right">
-          <Badge variant="outline" className="border-purple-500/60 text-purple-300 text-lg px-6 py-3 font-semibold shadow-md">
-            18th July
-          </Badge>
+      <section
+        id="schedule"
+        className="relative py-24 px-4 bg-gradient-to-br from-purple-900/60 via-slate-900/80 to-purple-900/60 flex items-center justify-center min-h-screen overflow-hidden"
+      >
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 left-1/4 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
         </div>
-        <div className="flex-1 text-left">
-          <h3 className="text-3xl font-bold text-white mb-2">Registration Closes</h3>
-          <p className="text-lg text-purple-200">Last day to register your team for Hackotsav 2025.</p>
+        <div className="container mx-auto text-center relative z-10">
+          <div className="mb-20">
+            <h2 className="text-5xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">Event Schedule</h2>
+            <p className="text-2xl text-purple-200 mb-2">Mark your calendars for every milestone!</p>
+          </div>
+          <div className="max-w-4xl mx-auto space-y-16">
+            {/* Registration Closes */}
+            <div className="flex items-center space-x-8 bg-white/5 border border-purple-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+              <div className="flex-shrink-0 w-48 text-right">
+                <Badge variant="outline" className="border-purple-500/60 text-purple-300 text-lg px-6 py-3 font-semibold shadow-md">
+                  18th July
+                </Badge>
+              </div>
+              <div className="flex-1 text-left">
+                <h3 className="text-3xl font-bold text-white mb-2">Registration Closes</h3>
+                <p className="text-lg text-purple-200">Last day to register your team for Hackotsav 2025.</p>
+              </div>
+            </div>
+            {/* Curtain Raiser */}
+            <div className="flex items-center space-x-8 bg-white/5 border border-blue-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+              <div className="flex-shrink-0 w-48 text-right">
+                <Badge variant="outline" className="border-blue-500/60 text-blue-200 text-lg px-6 py-3 font-semibold shadow-md">
+                  25th July
+                </Badge>
+              </div>
+              <div className="flex-1 text-left">
+                <h3 className="text-3xl font-bold text-white mb-2">Curtain Raiser</h3>
+                <p className="text-lg text-blue-200">Kick-off event with keynote speakers and challenge reveal.</p>
+              </div>
+            </div>
+            {/* Finale */}
+            <div className="flex items-center space-x-8 bg-white/5 border border-green-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
+              <div className="flex-shrink-0 w-48 text-right">
+                <Badge variant="outline" className="border-green-500/60 text-green-200 text-lg px-6 py-3 font-semibold shadow-md">
+                  19th August
+                </Badge>
+              </div>
+              <div className="flex-1 text-left">
+                <h3 className="text-3xl font-bold text-white mb-2">Finale</h3>
+                <p className="text-lg text-green-200">Final presentations, demos, and awards at MIT Bengaluru Campus.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      {/* Curtain Raiser */}
-      <div className="flex items-center space-x-8 bg-white/5 border border-blue-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
-        <div className="flex-shrink-0 w-48 text-right">
-          <Badge variant="outline" className="border-blue-500/60 text-blue-200 text-lg px-6 py-3 font-semibold shadow-md">
-            25th July
-          </Badge>
-        </div>
-        <div className="flex-1 text-left">
-          <h3 className="text-3xl font-bold text-white mb-2">Curtain Raiser</h3>
-          <p className="text-lg text-blue-200">Kick-off event with keynote speakers and challenge reveal.</p>
-        </div>
-      </div>
-      {/* Finale */}
-      <div className="flex items-center space-x-8 bg-white/5 border border-green-500/20 rounded-2xl shadow-lg px-8 py-8 backdrop-blur-md hover:scale-[1.025] transition-transform">
-        <div className="flex-shrink-0 w-48 text-right">
-          <Badge variant="outline" className="border-green-500/60 text-green-200 text-lg px-6 py-3 font-semibold shadow-md">
-            19th August
-          </Badge>
-        </div>
-        <div className="flex-1 text-left">
-          <h3 className="text-3xl font-bold text-white mb-2">Finale</h3>
-          <p className="text-lg text-green-200">Final presentations, demos, and awards at MIT Bengaluru Campus.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* FAQ Section */}
@@ -390,6 +390,17 @@ export default function HackathonPage() {
       </section>
 
       {/* Footer */}
+      <div className="container mx-auto text-center mb-3">
+        <p className="text-white text-lg font-semibold mb-2">
+          POC - Dr. Megha Arakeri
+        </p>
+        <p className="text-gray-300 text-base">
+          <a href="mailto:megha.arakeri@manipal.edu" className="underline hover:text-purple-300">
+            megha.arakeri@manipal.edu
+          </a>
+          , <a href="tel:9008977922" className="underline hover:text-purple-300">9008977922</a>
+        </p>
+      </div>
       <footer className="border-t border-white/10 py-12 px-4">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -406,8 +417,11 @@ export default function HackathonPage() {
               <Link href="#prizes" className="hover:text-white transition-colors">
                 Sponsors
               </Link>
-              
+
             </div>
+
+
+
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Hackotsav. All rights reserved.</p>
@@ -416,6 +430,7 @@ export default function HackathonPage() {
             </p>
           </div>
         </div>
+
       </footer>
     </div>
   )
